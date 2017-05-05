@@ -57,8 +57,8 @@ int main(){
     	printf("+ MENU +\n");
     	printf("++++++++\n");
     	printf("1 - Listar todos os registros\n");
-		printf("2 - Buscar por campo\n");
-		printf("3 - Buscar pela posição\n");
+		printf("2 - Buscar um registro pelo campo\n");
+		printf("3 - Buscar um registro pela posição\n");
 		printf("4 - Buscar um campo pela posição do registro\n");
 		printf("5 - Sair\n");
 		printf("Escolha uma opção: ");

@@ -136,17 +136,6 @@ void opcao4(FILE *file){
 	int fieldBusca; // indica qual campo sera buscado e retornado
 	char *result; // resultado da busca
 
-	// espera localização do registro
-	printf("Informe o numero do registro desejado (1...n): ");
-	scanf("%d", &regBusca);
-	getchar();
-
-	// valida a localização do registro
-	if (regBusca < 1){
-		printf("\nOpcao invalida.\n");
-		return;
-	}
-
 	// espera campo de busca
 	printf("1 - CNPJ\n");
 	printf("2 - Razao Social\n");
@@ -162,6 +151,17 @@ void opcao4(FILE *file){
 
 	// valida campo de busca
 	if (fieldBusca < 1 || fieldBusca > 8){
+		printf("\nOpcao invalida.\n");
+		return;
+	}
+
+	// espera localização do registro
+	printf("Informe o numero do registro desejado (1...n): ");
+	scanf("%d", &regBusca);
+	getchar();
+
+	// valida a localização do registro
+	if (regBusca < 1){
 		printf("\nOpcao invalida.\n");
 		return;
 	}
